@@ -110,10 +110,59 @@
         filter: blur(0);
       }
     }
+    .myButton {
+      -moz-box-shadow: 0px 10px 14px -7px #276873;
+      -webkit-box-shadow: 0px 10px 14px -7px #276873;
+      box-shadow: 0px 10px 14px -7px #276873;
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+      background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+      background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+      background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+      background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+      background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+      background-color:#599bb3;
+      -moz-border-radius:8px;
+      -webkit-border-radius:8px;
+      border-radius:8px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:20px;
+      font-weight:bold;
+      padding:13px 32px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #3d768a;
+    }
+    .myButton:hover {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+      background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+      background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+      background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+      background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+      background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+      background-color:#408c99;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
 
   </style>
 </head>
 <body>
+
+<div class="about">
+  <h1>ЯРОВА ОЛЬГА</h1>
+  <h3>JUNIOR FRONTEND DEVELOPER</h3>
+  <p>Имею большое желание работать и развиваться в IT. Понимаю, что не хватает опыта, поэтому готова обсуждать любые условия чтобы работать в команде профессионалов.</p>
+  <div class="tel">
+    <a href="tel:+380971816371">+380971816371</a>
+    <a href="mailto:olga4wm@gmail.com">olga4wm@gmail.com</a>
+  </div>
+</div>
 
 <div class="container">
   <a class="card" href="/hw5-yarovaya-upd/index.html" target="_blank">
@@ -128,11 +177,11 @@
     </svg>
 
     <div class="card__content">
-      <h1 class="card__title">Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
+      <h1 class="card__title">Верстка учебного макета Интернет-магазина.</h1>
+      <p>Современные стандарты HTML5 и CSS3</p>
     </div>
   </a>
-  <div class="card">
+  <a class="card" target="_blank" href="/hw7-yarovaya-upd/index.html">
     <div class="card__image-container">
       <img class="card__image" src="/images/2.png" alt="">
     </div>
@@ -144,11 +193,11 @@
     </svg>
 
     <div class="card__content">
-      <h1 class="card__title">Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
+      <h1 class="card__title">Верстка Лендинга с мобильной адаптацией</h1>
+      <p>Современные стандарты HTML5 и CSS3</p>
     </div>
-  </div>
-  <div class="card">
+  </a>
+  <a class="card" target="_blank" href="/Lesson4/index4.html">
     <div class="card__image-container">
       <img class="card__image" src="/images/3.png" alt="">
     </div>
@@ -160,11 +209,11 @@
     </svg>
 
     <div class="card__content">
-      <h1 class="card__title">Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
+      <h1 class="card__title">Верстка сайта туристической копании</h1>
+      <p>Современные стандарты HTML5 и CSS3</p>
     </div>
-  </div>
-  <div class="card">
+  </a>
+  <a class="card" target="_blank" href="https://jl3pvxl4lv.codesandbox.io/">
     <div class="card__image-container">
       <img class="card__image" src="/images/4.png" alt="">
     </div>
@@ -176,10 +225,27 @@
     </svg>
 
     <div class="card__content">
-      <h1 class="card__title">Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
+      <h1 class="card__title">Простой каталог</h1>
+      <p>Современные стандарты HTML5 и CSS3</p>
+      <a target="_blank" href="https://codesandbox.io/s/jl3pvxl4lv?fontsize=14" class="myButton">turquoise</a>
     </div>
-  </div>
+  </a>
+  <a class="card" target="_blank"  href="/Yarovaya-Olga-DZ-2/index2.html">
+    <div class="card__image-container">
+      <img class="card__image" src="/images/5.png" alt="">
+    </div>
+
+    <svg class="card__svg" viewBox="0 0 800 500">
+
+      <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+      <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+    </svg>
+
+    <div class="card__content">
+      <h1 class="card__title">Мои любимые фильмы )</h1>
+      <p>Современные стандарты HTML5 и CSS3</p>
+    </div>
+  </a>
 </div>
 
 </body>
