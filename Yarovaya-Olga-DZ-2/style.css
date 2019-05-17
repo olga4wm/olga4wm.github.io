@@ -1,0 +1,42 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background: url(img/bg/header.png) 0 0 no-repeat,
+	url(img/bg/footer.png) 0 100% no-repeat,
+	url(img/bg/main.png) 100% 100% no-repeat #ffffff;
+	padding: 87px 0 600px 0;
+}
+.wrapper {
+	width: 820px;
+	margin: 0 auto;
+	                                                                                                   
+}
+.list {
+	padding: 0;
+	list-style: none;
+}
+.item {
+	color:black;
+	text-align: center;
+	padding: 36px 0 36px 0;
+	border-top: 1px solid #d0d0d0;
+}
+.item:first-child {
+	border-top: none;
+}
+.title {
+	margin: 0;
+	font-size: 28px;
+	padding: 26px 0;
+	font-weight: 700;
+}
+
+.list p {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 10px 0
+}
+
+.list img {
+	width: 100%;
+	max-width: 100%; 
+}

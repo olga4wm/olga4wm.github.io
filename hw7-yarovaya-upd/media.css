@@ -1,0 +1,91 @@
+@media screen and (max-width: 959px) {
+	.header-nav {
+	    display: flex;
+	    justify-content: space-between;
+	}
+	.header-nav li {
+	    margin-right: 0;
+	}
+	.wrapper{
+	padding: 0 20px;
+	}
+	.header-menu {
+    	display: block;
+	}
+	.header-nav {
+		padding-top: 40px;
+	}
+
+
+	.text-box, .footer-centr, .footer-end {
+	    width: 100%;
+	    box-sizing: border-box;
+	}
+	.footer-box {
+	    padding: 96px 20px 40px 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+	    height: auto;
+	}
+	.slide-box .wrapper {
+		display: block;
+	}
+	.text-box {
+		padding: 40px 0;
+	}
+	.text-box {
+	    width: auto;
+	}
+	.company-box {
+	    margin-top: -10px;
+	}
+
+	.slide-box .wrapper {
+	    margin-top: 42px;
+	    text-align: center;
+	}
+	h1 {
+	    padding: 0px 0 30px 0;
+	    margin-left: 0;
+	}
+	.company-container {
+	    padding: 46px 0;
+	    height: auto;
+	}
+	.footer-box {
+    	padding: 46px 20px;
+	    height: auto;	
+	}
+}
+
+@media screen and (max-width: 614px) {
+	.header-menu {
+	    text-align: center;
+	}
+	.header-nav {
+	    display: block;
+	    text-align: center;
+	}
+	.header-nav li {
+	    display: block;
+	    text-align: center;
+	    padding-bottom: 12px;
+	}
+	.company-box {
+	    display: block;
+	}
+	.footer-box {
+	    display: block;
+	}
+	.footer-menu .wrapper {
+	    height: auto;
+	    display: block;
+	}
+	.logo-firm {
+	    height: auto;
+	    display: block;
+	}
+}
