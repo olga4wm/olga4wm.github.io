@@ -5,176 +5,129 @@
   <title>ЯРОВА ОЛЬГА - JUNIOR FRONTEND DEVELOPER</title>
 
   <style>
-    html {
-      background: #f5f7f8;
-      font-family: system-ui;
-      -webkit-font-smoothing: antialiased;
-      padding: 20px 0;
+    * {
+      box-sizing: border-box;
+      line-height: 1.5;
+      font-family: 'Open Sans', sans-serif;
     }
 
-    header {
-      width: 90%;
-      max-width: 1240px;
-      margin: 0 auto;
-    }
-    .band {
-      width: 90%;
-      max-width: 1240px;
-      margin: 0 auto;
-
-      display: grid;
-
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-gap: 20px;
-
-    @media (min-width: 30em) {
-      grid-template-columns: 1fr 1fr;
+    img {
+      max-width: 100%;
     }
 
-    @media (min-width: 60em) {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #444;
     }
 
     .card {
-      background: white;
-      text-decoration: none;
-      color: #444;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-
-    // sets up hover state
-    position: relative;
-      top: 0;
-      transition: all 0.1s ease-in;
-
-    &:hover {
-       top: -2px;
-       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-     }
-
-    article {
-      padding: 20px;
-      flex: 1;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      position: relative;
+      background: #333;
+      width: 400px;
+      height: 75vh;
+      border-radius: 6px;
+      padding: 2rem;
+      color: #aaa;
+      box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .card__image-container {
+      margin: -2rem -2rem 1rem -2rem;
+    }
+    .card__line {
+      opacity: 0;
+      animation: LineFadeIn .8s .8s forwards ease-in;
+    }
+    .card__image {
+      opacity: 0;
+      animation: ImageFadeIn .8s 1.4s forwards;
+    }
+    .card__title {
+      color: white;
+      margin-top: 0;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    .card__content {
+      margin-top: -1rem;
+      opacity: 0;
+      animation: ContentFadeIn .8s 1.6s forwards;
+    }
+    .card__svg {
+      position: absolute;
+      left: 0;
+      top: 115px;
     }
 
-    h1 {
-      font-size: 20px;
-      margin: 0;
-      color: #333;
-    }
-
-    p {
-      flex: 1;
-      line-height: 1.4;
-    }
-
-    span {
-      font-size: 12px;
-      font-weight: bold;
-      color: #999;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin: 2em 0 0 0;
-    }
-
-    .thumb {
-      padding-bottom: 60%;
-      background-size: cover;
-      background-position: center center;
-    }
-    }
-
-    .item-1 {
-    @media (min-width: 60em) {
-      grid-column: 1 / span 2;
-
-      h1 {
-        font-size: 24px;
+    @keyframes LineFadeIn {
+      0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+      }
+      50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #888BFF;
+      }
+      100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #545581;
       }
     }
+    @keyframes ContentFadeIn {
+      0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes ImageFadeIn {
+      0% {
+        transform: translate(-0.5rem, -0.5rem) scale(1.05);
+        opacity: 0;
+        filter: blur(2px);
+      }
+      50% {
+        opacity: 1;
+        filter: blur(2px);
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0);
+      }
     }
 
   </style>
 </head>
 <body>
-<header>
-  <h1>Cool Articles</h1>
-</header>
-<div class="band">
-  <div class="item-1">
-    <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
-      <article>
-        <h1>International Artist Feature: Malaysia</h1>
-        <span>Mary Winkler</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-2">
-    <a href="https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png);"></div>
-      <article>
-        <h1>How to Conduct Remote Usability Testing</h1>
-        <span>Harry Brignull</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-3">
-    <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg);"></div>
-      <article>
-        <h1>Created by You, July Edition</h1>
-        <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
-        <span>Melody Nieves</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-4">
-    <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
-      <article>
-        <h1>How to Code a Scrolling “Alien Lander” Website</h1>
-        <p>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
-        <span>Kezz Bracey</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-5">
-    <a href="https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);"></div>
-      <article>
-        <h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
-        <span>Rose</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-6">
-    <a href="https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
-      <article>
-        <h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
 
-        <span>Marie Gardiner</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-7">
-    <a href="https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
-      <article>
-        <h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
-        <span>Kendra Schaefer</span>
-      </article>
-    </a>
+<div class="container">
+  <div class="card">
+    <div class="card__image-container">
+      <img class="card__image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80" alt="">
+    </div>
+
+    <svg class="card__svg" viewBox="0 0 800 500">
+
+      <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+      <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+    </svg>
+
+    <div class="card__content">
+      <h1 class="card__title">Lorem ipsum</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
+    </div>
   </div>
 </div>
+
 </body>
 </html>
