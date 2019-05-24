@@ -69,8 +69,8 @@ img {
 .card__svg {
 	position: absolute;
 	left: 0;
-	/*top: 115px;*/
-	bottom: 0;
+	top: 115px;
+	/*bottom: 0;*/
 }
 
 @keyframes LineFadeIn {
@@ -188,7 +188,7 @@ p {
 	margin: 16px 0 0 0;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
 	.container-card {
 		flex-direction: column;
 	}
@@ -198,5 +198,9 @@ p {
 	}
 	.myButton-mod {
 		max-width: 88%;
+	}
+	.card__svg {
+		top: auto;
+		bottom: 0;
 	}
 }
