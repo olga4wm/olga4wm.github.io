@@ -50,6 +50,7 @@ img {
 .card__image {
 	opacity: 0;
 	animation: ImageFadeIn .8s 1.4s forwards;
+	width: 100%;
 }
 .card__title {
 	color: white;
@@ -68,7 +69,8 @@ img {
 .card__svg {
 	position: absolute;
 	left: 0;
-	top: 115px;
+	/*top: 115px;*/
+	bottom: 0;
 }
 
 @keyframes LineFadeIn {
@@ -186,7 +188,7 @@ p {
 	margin: 16px 0 0 0;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
 	.container-card {
 		flex-direction: column;
 	}
