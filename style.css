@@ -164,7 +164,7 @@ img {
 
 .about {
 	width: 100%;
-	padding: 0 0 45px 0;
+	padding: 0 0 25px 0;
 	text-align: center;
 	color: white;
 }
@@ -172,6 +172,10 @@ img {
 .about a {
 	color: #599bb3;
 	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
 }
 
 .subtitle {
