@@ -179,6 +179,7 @@ img {
 	text-align: center;
 	font-size: 22px;
 	font-weight: 400;
+	margin: 16px 0 0 0;
 }
 
 @media screen and (max-width: 1600px) {
